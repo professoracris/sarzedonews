@@ -1,0 +1,221 @@
+header {
+    background-color: dimgray;
+    text-align: center;
+    color: white;
+    }
+
+header h1 {
+    font-size: 60px;
+    margin: 0;
+    animation-name: mudacor;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition-property: all;
+    transition-duration: 2s;
+    
+}
+
+@keyframes mudacor {
+    0% { color: black;}
+    25% { color: red}
+    75% { color: white}
+    100% { color: blue}
+}
+
+header h1:hover {
+    font-size: 100px;
+    cursor: crosshair;
+    transition-property: font-size;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+}
+
+article > h1 {
+    text-align: center;
+    font-size: 40px;
+    border: dashed black;
+    max-width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    animation: borda 1s infinite;
+}
+
+@keyframes borda {
+    from { border: dashed}
+    to { border: dotted}
+}
+
+
+
+
+header img {
+    float: left;
+    width: 100px;
+    height: 85px;
+}
+
+
+nav ul {
+    border-top: solid white 6px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    font-family: fantasy;
+    
+        
+    
+}
+
+nav ul li {
+    margin: 20px;
+    display: inline-block;
+    
+       
+    
+}
+
+nav ul li a:hover {
+    cursor: pointer;
+    border-bottom: 2px solid red;
+    
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
+article img {
+    width: 300px;
+    height: 180px;
+    border-radius: 30px;
+    float: left;
+    margin-right: 20px;
+}
+
+#covid img {
+    margin: 0%;
+
+}
+
+.noticia {
+    text-align: justify;
+    margin: 50px;
+    text-decoration: none;
+    margin-top: 100px;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+body > section {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    margin: 100px;
+    border-radius: 30px;
+    
+}
+
+body > section img {
+    width: 1000px;
+    margin: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+iframe {
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: red;
+    color: white;
+    text-align: center;
+    height: 130px
+}
+
+
+#footer1{
+    float: left;
+    margin-left: 50px;
+
+}
+
+
+#footer2{
+    float: right;
+    margin-right: 50px;
+}
+
+footer img {
+    height: 130px;
+}
+
+body {
+        background-image: linear-gradient(to bottom right, gray,#ead5d5, #9797f5, white, gray, blue);
+}
+
+.noticia a {
+    font-style: italic;
+    color: blue;
+    
+} 
+
+
+.noticia a:visited {
+    color: red;
+}
+
+aside {
+    text-align: left;
+    margin-right: 300px;
+    border: solid;
+    padding: 20px;
+}
+
+aside p {
+    border: solid black 8px;
+}
+
+aside p:hover {
+    cursor: text;
+    background-color: blue;
+}
+
+aside p:active {
+    background-color: white;
+    cursor: text;
+
+}
+
+aside h7::before {
+        content: "*";
+        color: red;
+        size: 30px;
+}
+
+
+aside h3 { 
+    text-align: center;
+}
+
+
+.pisca {
+    opacity: 0;
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    
+}
+
+@keyframes pisca {
+    0% { opacity: 1;}
+    50% { opacity: 0;}
+    100% { opacity: 1}
+}
+
+
